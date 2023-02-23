@@ -5,7 +5,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 sh 'printenv'
-                sh 'docker-compose up'
+                sh 'docker ps -a'
             }
         }
     }
