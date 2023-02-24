@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Deploy') {
             steps {
-                sh 'whoami'
+                sh 'docker ps -a'
             }
         }
     }
