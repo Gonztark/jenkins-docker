@@ -4,8 +4,7 @@ pipeline {
     stages {
         stage('Deploy') {
             steps {
-                sh 'printenv'
-                sh 'docker ps -a'
+                sh 'sudo docker ps -a'
             }
         }
     }
