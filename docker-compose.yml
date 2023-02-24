@@ -12,9 +12,11 @@ services:
     working_dir: /var/www
     volumes:
       - ./:/var/www
+    network_mode: host
 
   webserver:
     image: nginx:stable
+    network_mode: host
     container_name: webserver
     restart: always
     ports:
@@ -29,6 +31,7 @@ services:
 
   db:
     image: postgres:12
+    network_mode: host
     container_name: db
     restart: always
     volumes:
