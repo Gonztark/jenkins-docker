@@ -4,7 +4,8 @@ pipeline {
     stages {
         stage('Deploy') {
             steps {
-                sh 'sudo docker compose up'
+                sh 'ls /var/jenkins_home/workspace/Pipeline-docker/docker/'
+                sh 'ls /var/'
             }
         }
     }
