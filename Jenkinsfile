@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Deploy') {
             steps {
-                sh 'sudo docker compose up'
+                sh 'docker compose up'
             }
         }
     }
