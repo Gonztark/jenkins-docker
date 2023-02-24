@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Deploy') {
             steps {
-                sh 'docker start db'
+                sh 'sudo docker start db'
             }
         }
     }
