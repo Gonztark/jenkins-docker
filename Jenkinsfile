@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Deploy') {
             steps {
-                sh 'sudo docker ps -a'
+                sh 'docker ps -a'
             }
         }
     }
