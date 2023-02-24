@@ -1,5 +1,5 @@
 FROM nginx:stable
 
+COPY . /var/www
 COPY ./docker/app.conf /etc/nginx/conf.d/default.conf
-COPY ./public /var/www
 WORKDIR /var/www

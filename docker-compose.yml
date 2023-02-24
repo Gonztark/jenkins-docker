@@ -16,7 +16,7 @@ services:
   webserver:
     build:
       context: .
-      dockerfile: docker/Dockerfile_nginx
+      dockerfile: Dockerfile
     container_name: webserver
     restart: always
     ports:
