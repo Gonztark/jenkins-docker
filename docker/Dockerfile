@@ -6,7 +6,7 @@ RUN docker-php-ext-install pdo pgsql pdo_pgsql
 
 
 RUN apt-get clean && rm -rf /var/lib/apt/lists/*
-RUN ls .
+
 COPY . /var/www
 WORKDIR /var/www
 
