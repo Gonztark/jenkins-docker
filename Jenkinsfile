@@ -6,6 +6,7 @@ pipeline {
             steps {
                 sh 'sudo docker compose stop'
                 sh 'sudo docker compose up --build -d'
+                sh 'ls'
             }
         }
     }
